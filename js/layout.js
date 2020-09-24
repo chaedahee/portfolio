@@ -115,7 +115,7 @@ pshparell.length = $(document).find(".page").length;
 	
 		$('.re_btn > li').mouseleave(
 	 	function(){
-			//$(this).removeClass("on");
+			$(this).removeClass("on");
 	
 		}
 	 );
