@@ -126,16 +126,19 @@ background:#4c7ea7}
 .renew_01 > .re_box > .re_left .hd3 > p{font-size:15px; line-height:5px;}
 .renew_01 > .re_box > .re_left .hd3 > h3{font-size:35px; letter-spacing:-3px}
 .renew_01 > .re_box > .re_left > h3 > span{font-size:15px;}
-.renew_01 > .re_box > .re_left .re_logo{margin-top:25px; width:100px; height:100px; background:#73AAB8}
+.renew_01 > .re_box > .re_left .re_logo{}
+.renew_01 > .re_box > .re_left .re_logo > img{padding-top:20px;}
 .renew_01 > .re_box > .re_left .re_ex{margin-top:25px;}
 .renew_01 > .re_box > .re_left .re_ex > ul{}
 .renew_01 > .re_box > .re_left .re_ex > ul > li{padding-top:55px; overflow:hidden}
 .renew_01 > .re_box > .re_left .re_ex > ul > li > .title{font-size:17px; font-weight:bold;
  line-height:30px;}
 .renew_01 > .re_box > .re_left .re_ex > ul > li > .explain{font-size:16px; font-weight:lighter;}
+/*
 .renew_01 > .re_box > .re_left .re_ex > ul > li >  .color_01{float:left; margin-right:10px;
 width:63px; height:18px; background:#8199d6}
 .renew_01 > .re_box > .re_left .re_ex > ul > li > .color_02{float:left; width:63px; height:18px; background:#3b485f}
+*/
 /*btn*/
 .renew_01 > .re_box > .re_left .re_ex > .re_btn{overflow:hidden}
 .renew_01 > .re_box > .re_left .re_ex > .re_btn > li{float:left; margin-left:40px;}
