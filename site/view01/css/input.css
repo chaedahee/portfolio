@@ -1,0 +1,14 @@
+.inputset {display:inline-block; background:#fff; border:1px solid #1b1b1b}
+.inputset input {border:none; background:none; height:27px; padding:0 5px}
+
+.inputset input::placeholder  {color:#f2f2f2}
+
+
+.inputset.sch {display:table; padding-right:5px}
+.inputset.sch .sch_icon {width:20px; height:19px; background:url('../images/search.png') no-repeat center; padding-right:5px
+
+}
+
+.inputset.sch input,
+.inputset.sch .sch_icon {display:table-cell; vertical-align: middle}
+
