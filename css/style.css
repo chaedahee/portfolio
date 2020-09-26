@@ -1,11 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-*{margin:0; padding:0; box-sizing:border-box;}
-li{list-style: none;}
-a{text-decoration:none; color:#1B1B1B;}
-
-body{font: normal 100%/1.2 "맑은 고딕"}
 
 
 #warp{margin:0 auto; min-width:1280px;}
@@ -143,7 +138,7 @@ width:40px; height:18px; background:#fae8dd;}
 .renew_01 > .re_box > .re_left .re_ex > ul > li > .color_03{float:left; width:40px; height:18px; background:#000;}
 
 /*btn*/
-.renew_01 > .re_box > .re_left .re_ex > .re_btn{overflow:hidden}
+.renew_01 > .re_box > .re_left .re_ex > .re_btn{overflow:hidden; margin-top:50px;}
 .renew_01 > .re_box > .re_left .re_ex > .re_btn > li{float:left; margin-left:40px;}
 .renew_01 > .re_box > .re_left .re_ex > .re_btn > li > a{display:block;
 border: 2px solid #230403; padding:10px 15px; color:#230403}
@@ -157,7 +152,7 @@ border: 2px solid #230403; padding:10px 15px; color:#230403}
 
 .renew_01 > .re_box > .re_right{float:left; position:relative; margin-left:180px; 
 width:640px; height:827px}
-.renew_01 > .re_box > .re_right > .moniter{position: absolute; top:280px; right:15px;}
+.renew_01 > .re_box > .re_right > .moniter{position: absolute; top:150px; right:15px;}
 .renew_01 > .re_box > .re_right > .phone{position: absolute; top:410px ; left:50px;
 z-index:100;}
 
@@ -184,7 +179,7 @@ width:40px; height:18px; background:#6a9c3f;}
 .renew_02 > .re_box > .re_left .re_ex > ul > li > .color_02{float:left; width:40px; height:18px; margin-right:10px; background:#e8e7e7;}
 .renew_02 > .re_box > .re_left .re_ex > ul > li > .color_03{float:left; width:40px; height:18px; background:#0e113f;}
 
-.renew_02 > .re_box > .re_left .re_ex > .re_btn{overflow:hidden}
+.renew_02 > .re_box > .re_left .re_ex > .re_btn{overflow:hidden; margin-top:50px;}
 .renew_02 > .re_box > .re_left .re_ex > .re_btn > li{float:left; margin-left:40px;}
 .renew_02 > .re_box > .re_left .re_ex > .re_btn > li > a{display:block;
 border: 2px solid #6a9c3f; padding:10px 15px; color:#6a9c3f;}
@@ -195,10 +190,46 @@ border: 2px solid #6a9c3f; padding:10px 15px; color:#6a9c3f;}
 
 .renew_02 > .re_box > .re_right{float:left; position:relative; margin-left:180px; 
 width:640px; height:827px;}
-.renew_02 > .re_box > .re_right > .moniter{position: absolute; top:280px; right:30px;}
+.renew_02 > .re_box > .re_right > .moniter{position: absolute; top:150px; right:30px;}
 .renew_02 > .re_box > .re_right > .phone{position: absolute; top:420px; left:50px;
 z-index:100;}
 
+
+
+
+
+
+/*pop*/
+#lypop {position:fixed; top:0; left:0; width:100%; height: 100vh;  z-index: 9999; display: none}
+
+#lypop .inner {position:absolute; width:800px; height:96vh; top:50%; left:50%; margin:-48vh 0 0 -400px; z-index: 100; border:1px solid #000;}
+#lypop .lypopcont {overflow: auto; height:100%; overflow-x:hidden;}
+#lypop .inner .closebtn { 
+position:absolute; top:0; right:-60px;
+display:block; width:30px; height:30px; background:#ccc;
+}
+
+#lypop .inner .closebtn .arrset {display: block; width:30px; height: 30px; position:absolute; top:0; left: 0; right:0; bottom:0; margin:auto;}
+#lypop .inner .closebtn .arrset span {display:block; width:30px; height:2px; background:#fff; }
+#lypop .inner .closebtn .arrset span + span {margin-top:10px}
+#lypop .inner .closebtn .arrset span:nth-child(1) {transform: translateY(13px) rotate(45deg)}
+#lypop .inner .closebtn .arrset span:nth-child(2) {transform: translateY(1px) rotate(-45deg)}
+
+
+#lypop .lypopcont .simg {display: block}
+#lypop .lypopcont .simg  > img{width:800px;}
+#lypop .bg {position:absolute; top:0; left:0; width:100%; height: 100vh; background:rgba(0,0,0,0);}
+
+#lypop.on {display:block}
+#lypop.on .bg {/* background:rgba(0,0,0,.7) */animation: bgani .5s linear 1; background:rgba(0,0,0,.3) }
+
+
+@keyframes bgani { 
+	0% {background:rgba(0,0,0,0)}
+	50% {}
+	100% {background:rgba(0,0,0,.3)}
+}
+.titset .hd3 {float: left; padding-top: 40px; font-size:18px; }
 
 
 

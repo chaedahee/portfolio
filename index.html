@@ -137,14 +137,8 @@
 										<p class="explain">Photoshop, Html5,  Css,  Jquery</p>
 									</li>
 									<li>
-										<p class="title">CONCEPT</p>
-										<p class="explain">부드러운, 모던한</p>
-									</li>
-									<li>
-										<p class="title">COLOR</p>
-										<div class="color_01"></div>
-										<div class="color_02"></div>
-										<div class="color_03"></div>
+										<p class="title">PROJECT TYPE</p>
+										<p class="explain">Personal project</p>
 									</li>
 									<li>
 										<p class="title">디자인소개</p>
@@ -152,7 +146,7 @@
 									</li>
 								</ul>
 								<ul class="re_btn">
-								<li><a href="javascript:void(0)">DETAIL VIEW</a></li>
+								<li><a href="javascript:void(0)"  onclick="lypop(event, this)"  data-num="1">DETAIL VIEW</a></li>
 								<li><a href="/portfolio/site/view01/" target="_blank">MOVE PAGE</a></li>
 								</ul>
 							</div>
@@ -190,14 +184,8 @@
 										<p class="explain">Photoshop, Html5,  Css,  Jquery</p>
 									</li>
 									<li>
-										<p class="title">CONCEPT</p>
-										<p class="explain">활동적인, 건강한</p>
-									</li>
-									<li>
-										<p class="title">COLOR</p>
-										<div class="color_01"></div>
-										<div class="color_02"></div>
-										<div class="color_03"></div>
+										<p class="title">PROJECT TYPE</p>
+										<p class="explain">Personal project</p>
 									</li>
 									<li>
 										<p class="title">디자인소개</p>
@@ -205,7 +193,7 @@
 									</li>
 								</ul>
 								<ul class="re_btn">
-									<li><a href="javascript:void(0)">DETAIL VIEW</a></li>
+									<li><a href="javascript:void(0)"  onclick="lypop(event, this)"  data-num="2">DETAIL VIEW</a></li>
 									<!--
 									<li><a href="javascript:void(0)">MOVE PAGE</a></li>
 									-->
@@ -225,14 +213,24 @@
 		
 	</div>
 	
-	<div id="popup">
-		<div class="pop01">
-			<div class="pop_cont">
-				<img src="images/">
-			</div>
-		</div>
-	</div>
 	
+	<!--pop-->
+<div id="lypop">
+	<div class="inner">
+		<div class="lypopcont">
+			<div class="simg">
+				<img src="images/detailview01.jpg" alt="page">
+			</div>	
+		</div>
+		<a href="" class="closebtn" onClick="lypopClose(event, this)">
+			<div class="arrset">
+				<span></span>	    				
+				<span></span>
+			</div>
+		</a>	    			    		
+	</div>
+	<div class="bg"></div>
+</div>
 	
 </div>
 </body>

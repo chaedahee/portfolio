@@ -151,4 +151,31 @@ pshparell.length = $(document).find(".page").length;
 	
 	
 });
+//end
+
+
+var lypop = function(e, _this) { 
+   e.preventDefault();
+   var _this = $(_this);
+   var _thisDataNum = _this.attr("data-num");
+   console.log(_thisDataNum);
+   var _origin = $(document).find("#lypop");
+   
+   
+   _origin.addClass("on");
+   $('body').css('overflow','hidden');
+   
+   _origin.find(".lypopcont .simg img").attr("src", "img/detailview0" + _thisDataNum +".jpg");
+   
+   
+};
+
+var lypopClose = function(e, _this) { 
+   e.preventDefault();
+   var _this = $(_this);
+   var _origin = $(document).find("#lypop");      
+   _origin.removeClass("on");
+   $('body').removeAttr('style');      
+};
+
 
