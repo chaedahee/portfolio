@@ -1,7 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+*{margin:0; padding:0; box-sizing:border-box;}
+li{list-style: none;}
+a{text-decoration:none; color:#1B1B1B;}
 
+body{font: normal 100%/1.2 "맑은 고딕"}
 
 #warp{margin:0 auto; min-width:1280px;}
 
