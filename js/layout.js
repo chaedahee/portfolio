@@ -165,7 +165,7 @@ var lypop = function(e, _this) {
    _origin.addClass("on");
    $('body').css('overflow','hidden');
    
-   _origin.find(".lypopcont .simg img").attr("src", "img/detailview0" + _thisDataNum +".jpg");
+   _origin.find(".lypopcont .simg img").attr("src", "images/detailview0" + _thisDataNum +".jpg");
    
    
 };
