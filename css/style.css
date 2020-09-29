@@ -71,7 +71,7 @@ width:100px; height:3px; background:#96beda; opacity:0; transition:all .5s;}
 
 /*main_img*/
 .main_img{position: relative; height: 900px; top:0; left:0;
-background:url('../images/main_img(6).jpg') no-repeat center;
+background:url('../images/main_img.jpg') no-repeat center;
 background-size:cover	
 }
 .main_img > img{}
