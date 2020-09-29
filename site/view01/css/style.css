@@ -16,62 +16,15 @@ font-size:16px; font-weight:bold; padding:10px 40px}
 
 
 
-
-
-
 /*bar*/
-
-
 .navbar{position: absolute; height:5px; bottom:-1px; z-index: 200; background:#fff; transition: all .3s ease-in-out;}
-
-/*
-nav .navlist > li > a:nth-child(1).is-current ~ .bar {
-  left: 0;
-}
-nav .navlist > li > a:nth-child(2).is-current ~ .bar {
-  left: 20%;
-}
-nav .navlist > li > a:nth-child(3).is-current ~ .bar {
-  left: 40%;
-}
-nav .navlist > li > a:nth-child(4).is-current ~ .bar {
-  left: 60%;
-}
-nav .navlist > li > a:nth-child(5).is-current ~ .bar {
-  left: 80%;
-}
-nav.navlist > li >  a:nth-child(1):hover ~ .bar {
-  left: 0;
-}
-nav .navlist > li > a:nth-child(2):hover ~ .bar {
-  left: 20%;
-}
-nav .navlist > li > a:nth-child(3):hover ~ .bar {
-  left: 40%;
-}
-nav.navlist > li >  a:nth-child(4):hover ~ .bar {
-  left: 60%;
-}
-nav .navlist > li > a:nth-child(5):hover ~ .bar {
-  left: 80%;
-}
-
-*/
-
-
-
-
-
-
-
 
 
 
 
 /*dp2*/
 header .header_in nav .navlist > li > .dp2{height:0; visibility: hidden;}
-header .header_in nav .navlist > li > .dp2 > li{height:40px; background:#fff;}
-header .header_in nav .navlist > li > .dp2 > li:last-child{ border-bottom:1px solid #1b1b1b;}
+header .header_in nav .navlist > li > .dp2 > li{height:40px}
 header .header_in nav .navlist > li > .dp2 > li > a{display:block; color:#666;
 padding:15px 5px; line-height:11px; font-size:14px;}
 
