@@ -96,13 +96,13 @@ transition:all .2s linear
 .brand .brand_text .hd2{margin:160px 0 0 80px;}
 .brand .brand_text .hd2 > p{font-size:16px; letter-spacing:-1px}
 .brand .brand_text .hd2 > h2{font-size:40px; line-height:30px;}
-.brand .brand_text .award{margin:56px 0 0 80px; width:480px; height:90px; border-bottom:1px solid #1b1b1b;
-border-top:1px solid #1b1b1b;}
+.brand .brand_text .award{margin:56px 0 0 80px; width:510px; height:90px; border-bottom:1px solid #1b1b1b;
+border-top:1px solid #1b1b1b; }
 .brand .brand_text .award >img{float:left; padding:16px 15px;}
-.brand .brand_text .award > ul{overflow:hidden;}
+.brand .brand_text .award > ul{overflow:hidden; }
 .brand .brand_text .award > ul > li{float:left; font-size:13px; line-height:25px; margin:20px 25px 0 0;
 font-weight:bold}
-.brand .brand_text .text_box{margin:20px 0 0 80px; width:500px;}
+.brand .brand_text .text_box{margin:20px 20px 0 85px; width:500px;}
 .brand .brand_text .text_box > p{font-size:12px; color:#666666; line-height:20px}
 
 
