@@ -102,4 +102,35 @@ var navfstDp2LiHt = $(".navlist > li").find(".dp2 > li:first").outerHeight();
 		
 	});
 
+	
+	
+	
+	
+	
+		var swiper = new Swiper('.swiper-container', {
+					loop:true,
+					autoplay: {
+						delay: 4000,
+					},							
+				});
+
+				swiper.on('slideChange', function () {
+				  console.log(swiper.realIndex);
+					$('.visual .visual_in .object_01 img').removeClass("on");
+					$('.visual .visual_in .object_01 img').eq(swiper.realIndex).addClass("on");
+					$('.visual .visual_in .object_03 img').removeClass("on");
+					$('.visual .visual_in .object_03 img').eq(swiper.realIndex).addClass("on");
+					
+				});	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 });
