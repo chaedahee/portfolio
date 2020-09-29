@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#wrap{margin:0 auto; min-width:1280px}
+
+/*header*/
+header{position: relative; height:100px;  background:#1b1b1b; z-index: 999;}
+header .header_in{position: relative; margin:0 auto; width:1280px; height:100px; z-index:110;}
+header .header_in .logo{position:absolute; top:32px; left:90px; }
+header .header_in nav{position:absolute; right:50px; top:61px; z-index:100}
+header .header_in nav .navlist{overflow:hidden;}
+header .header_in nav .navlist > li{float:left;  text-align: center}
+header .header_in nav .navlist > li > a{display:block; color:#ffffff;
+font-size:16px; font-weight:bold; padding:10px 40px}
+
+
+
+
+
+
+/*bar*/
+
+
+.navbar{position: absolute; height:5px; bottom:-1px; z-index: 200; background:#fff; transition: all .3s ease-in-out;}
+
+/*
+nav .navlist > li > a:nth-child(1).is-current ~ .bar {
+  left: 0;
+}
+nav .navlist > li > a:nth-child(2).is-current ~ .bar {
+  left: 20%;
+}
+nav .navlist > li > a:nth-child(3).is-current ~ .bar {
+  left: 40%;
+}
+nav .navlist > li > a:nth-child(4).is-current ~ .bar {
+  left: 60%;
+}
+nav .navlist > li > a:nth-child(5).is-current ~ .bar {
+  left: 80%;
+}
+nav.navlist > li >  a:nth-child(1):hover ~ .bar {
+  left: 0;
+}
+nav .navlist > li > a:nth-child(2):hover ~ .bar {
+  left: 20%;
+}
+nav .navlist > li > a:nth-child(3):hover ~ .bar {
+  left: 40%;
+}
+nav.navlist > li >  a:nth-child(4):hover ~ .bar {
+  left: 60%;
+}
+nav .navlist > li > a:nth-child(5):hover ~ .bar {
+  left: 80%;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*dp2*/
+header .header_in nav .navlist > li > .dp2{height:0; visibility: hidden;}
+header .header_in nav .navlist > li > .dp2 > li{height:40px; background:#fff;}
+header .header_in nav .navlist > li > .dp2 > li:last-child{ border-bottom:1px solid #1b1b1b;}
+header .header_in nav .navlist > li > .dp2 > li > a{display:block; color:#666;
+padding:15px 5px; line-height:11px; font-size:14px;}
+
+
+header .header_in nav .navlist > li > .dp2 > li > a:hover{color:#1b1b1b; font-weight:bold;}
+
+/*navbg*/
+header .navbg{position:absolute; top:100px; height:0px;
+left:0; right:0; background:#fff; z-index:100; border-bottom:1px solid #1b1b1b;}
+
+
+
+
+/*top_nav*/
+header .header_in .top_nav{position:absolute; right:80px; top:10px;}
+header .header_in .top_nav > ul{overflow:hidden}
+header .header_in .top_nav > ul > li{float:left; text-align: center;}
+header .header_in .top_nav > ul > li+li{margin-left:30px}
+header .header_in .top_nav > ul > li > a{font-size:12px; color:#ffffff; 
+}
+
+
+
+
+
+
+
+
+/*visual*/
+.visual{ height:800px;background:url('../images/visual_bg.jpg')no-repeat center;}
+.visual .visual_in{ position:relative; margin:0 auto;  width:1280px;height:800px; }
+
+.visual .visual_in .object_01{position: absolute; top:20px; right:185px; width: 373px; height:258px; overflow: hidden}
+.visual .visual_in .object_01 img {position:absolute; top:0; left:0; transition:opacity .2s linear; opacity:0}
+.visual .visual_in .object_01 img:nth-child(1) {z-index:3}
+.visual .visual_in .object_01 img:nth-child(2) {z-index:2}
+.visual .visual_in .object_01 img:nth-child(3) {z-index:1}
+
+
+.visual .visual_in .object_01 img.on {opacity:1}
+
+.visual .visual_in .object_02 {position: absolute;  left:140px;; width: 516px; height:100%;
+background:url('../images/visual_bg_in.jpg'); display:flex; justify-content: center; align-items: flex-end
+}
+.visual .visual_in .object_03{position: absolute; bottom:20px; right:200px; width: 404px}
+
+
+/*brand*/
+.brand {height:695px; background:#f2f2f2; display: flex}
+
+.brand .brand_img {flex:none; height:100%;  width:200px; overflow: hidden}
+.brand .brand_img span {display:block; background:url('../images/brand.jpg') no-repeat center; background-size:cover; height:100%;
+transition:all .2s linear
+}
+.brand .brand_img span:hover {transform:scale(1.2)}
+
+.brand .brand_text {flex:1; }
+
+
+.brand .brand_text .hd2{margin:160px 0 0 80px;}
+.brand .brand_text .hd2 > p{font-size:16px; letter-spacing:-1px}
+.brand .brand_text .hd2 > h2{font-size:40px; line-height:30px;}
+.brand .brand_text .award{margin:56px 0 0 80px; width:480px; height:90px; border-bottom:1px solid #1b1b1b;
+border-top:1px solid #1b1b1b;}
+.brand .brand_text .award >img{float:left; padding:16px 15px;}
+.brand .brand_text .award > ul{overflow:hidden;}
+.brand .brand_text .award > ul > li{float:left; font-size:13px; line-height:25px; margin:20px 25px 0 0;
+font-weight:bold}
+.brand .brand_text .text_box{margin:20px 0 0 80px; width:500px;}
+.brand .brand_text .text_box > p{font-size:12px; color:#666666; line-height:20px}
+
+
+
+
+
+/*competi*/
+.competi{height:770px; background: #ebf5ff; overflow:hidden; display: flex}
+
+.competi .competi_text{flex:none;}
+.competi .competi_text .hd2{margin:110px 0 0 320px;}
+.competi .competi_text .hd2 > p{font-size:16px; letter-spacing:-1px}
+.competi .competi_text .hd2 > h2{font-size:40px; line-height:30px;}
+
+.competi .competi_text .cont{margin:78px 0 0 320px;}
+.competi .competi_text .cont > .contlist > li{margin-bottom:30px;}
+.competi .competi_text .cont > .contlist > li > a{display:block; font-size:18px; color:#1b1b1b; text-decoration: underline; font-weight:700}
+.competi .competi_text .cont > .contlist > li > p{width:400px; padding:5px; line-height:20px;
+font-size:13px; letter-spacing:0px; }
+
+
+
+
+
+
+
+
+
+.competi .competi_img{flex:none; height:100%;  width:998px; overflow: hidden}
+.competi .competi_img span {display:block; background:url('../images/competi_bg(4).jpg') no-repeat center; background-size:cover; height:100%;
+transition:all .2s linear
+}
+.competi .competi_img span:hover {transform:scale(1.2)}
+
+
+
+
+
+
+
+
+/*material*/
+.material{position: relative;  height:680px; background:url(../images/material_bg.jpg)no-repeat center; background-size:cover;}
+/*img*/
+.material .mat_imglist{ padding-top:87px; overflow:hidden; text-align: center; font-size:0}
+
+.material .mat_imglist .mat_img{position:relative; display:inline-block}
+.material .mat_imglist .mat_img + .mat_img {margin-left:25px}
+.material .mat_imglist .mat_img:last-child{margin-right:0}
+.material .mat_imglist .mat_img > img{vertical-align: top}
+/*text_box*/
+.material .mat_imglist .mat_img > .box {float:left; position:relative;
+width:390px; height:150px;background:#fff;}
+.material .mat_imglist .mat_img > .box > .hd3 { padding-top:35px;
+z-index:200; text-align:center; display:flex; font-size:1rem;
+justify-content: center;}
+.material .mat_imglist .mat_img > .box > .stxt {padding-top:10px; letter-spacing:-1.5px;
+color:#1b1b1b; text-align:center; line-height: 1.5; font-size:16px}
+
+
+
+
+/*link*/
+.link{position: relative;height:530px; background: #e2ddd9}
+.linklist {display:flex; width:1280px; margin:0 auto; height:100%}
+.linklist .grid {margin-top: 83px;  }
+.linklist .grid + .grid {margin-left:22px}
+.linklist .grid:nth-child(1) {flex:none; width:364px;  height:364px; background:#f00}
+.linklist .grid:nth-child(2) {flex:none; width:364px; height:364px; background:#f00}
+.linklist .grid:nth-child(3) {flex:1;  width:508px;  height:364px;}
+
+.linklist .grid .simg{}
+.linklist .grid .stext{z-index:200; position: absolute; top:200px; margin-left:20px}
+.linklist .grid .stext > h4{color:#fff; font-size:25px; padding-bottom:10px;
+display:inline-block
+}
+.linklist .grid .stext > h4:after { 
+content:""; display:block; width:100%; height:2px; background:#fff; margin-top:10px;
+	
+}
+
+.linklist .grid:last-child .stext {margin-left:5px}
+
+.linklist .grid .stext > p{color:#fff; font-size:14px; font-weight:lighter; line-height:30px;}
+
+
+.linklist .grid .stext > h4 + p,
+.linklist .grid .stext > p + .inputset {margin-top:10px}
+
+
+.find .stext > .inputset {background:transparent; border:1px solid #fff}
+.find .stext > .inputset input {color:#fff}
+
+/*
+.find .stext > .inputset > input{ margin:40px 0 0 20px; padding:5px 5px; background:rgba(0,0,0,0); border:1px solid #fff; color:#fff}
+*/
+.linklist .grid.r_box {display:flex; flex-direction: column}
+.linklist .grid.r_box .row {}
+.linklist .grid.r_box .row.review {height:218px; background: #cec7c0; position:relative;}
+
+/*review*/
+.linklist .grid.r_box .row.review .re_inner{margin:0 auto; margin-top:15px;
+width:462px; height:185px;}
+.linklist .grid.r_box .row.review .re_inner h5{font-size:25px; text-decoration:underline;}
+.linklist .grid.r_box .row.review .re_inner > ul{width:462px; height:144px;  margin-top:11px; overflow:hidden;}
+.linklist .grid.r_box .row.review .re_inner > ul > li{float:left;
+width:220px; height:144px; background: #e0dcdc}
+.linklist .grid.r_box .row.review .re_inner > ul > li:first-child{margin-right:22px;}
+.linklist .grid.r_box .row.review .re_inner > ul > li > a{overflow:hidden;}
+
+.row.review .re_inner > ul > li .dp2 {display:flex; height:100%;}
+.row.review .re_inner > ul > li .dp2 > dt,
+.row.review .re_inner > ul > li .dp2 > dd{flex:1;}
+.row.review .re_inner > ul > li .dp2 > dt{}
+.row.review .re_inner > ul > li .dp2 > dd{padding:10px 5px;}
+.row.review .re_inner > ul > li .dp2 > dd .stext{position:relative; top:0; left:0;
+font-size:13px; color:#1b1b1b; display:block; font-weight:bold}
+.row.review .re_inner > ul > li .dp2 > dd .stext.ty1{font-size:11px; line-height:1.5; margin-top: 20px; font-weight:lighter}
+
+/*news*/
+.linklist .grid.r_box .row.news {height:126px; margin-top:20px; background: #cec7c0}
+.linklist .grid.r_box .row.news > h5{margin:10px 15px; font-size:25px; text-decoration:underline;}
+.linklist .grid.r_box .row.news > h5 > span{float:right; 
+ padding-right:10px;}
+.linklist .grid.r_box .row.news > h5 > span a{color:#1b1b1b; font-size:16px; font-weight:lighter;}
+.linklist .grid.r_box .row.news > ul{padding:5px 15px;}
+.linklist .grid.r_box .row.news > ul >li{}
+.linklist .grid.r_box .row.news > ul >li > a{display:block; color:#666; font-size:14px; font-weight:lighter; line-height:25px;}
+
+
+
+footer{ height:250px; background:#222222}
+footer .f_inner{margin:0 auto; padding-top:64px;
+width:675px; height: 250px; }
+footer .f_inner .f_logo{float:left; padding-top:40px}
+footer .f_inner .address{float:right; }
+footer .f_inner .address > li{font-size:13px; color:#fff}
+footer .f_inner .address > li:last-child{padding-top:20px;}
+
+
+
+
+
