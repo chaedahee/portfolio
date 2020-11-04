@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0; padding:0; box-sizing: border-box; outline: none}
+li{list-style:none}
+a{text-decoration:none}
+body{font:normal 100%/1.2 "BareunBatang"; letter-spacing: -0.05em}
+
+@font-face {
+font-family: 'BareunBatang';
+font-style: normal;
+font-weight: 400;
+src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunBatang/BareunBatangOTFM.woff2') format('woff2'),
+url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunBatang/BareunBatangOTFM.woff') format('woff');
+}
+
+@font-face {
+font-family: 'BareunBatang';
+font-style: normal;
+font-weight: 700;
+src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunBatang/BareunBatangOTFB.woff2') format('woff2'),
+url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunBatang/BareunBatangOTFB.woff') format('woff');
+}
+
+@font-face {
+font-family: 'BareunBatang';
+font-style: normal;
+font-weight: 300;
+src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunBatang/BareunBatangOTFL.woff2') format('woff2'),
+url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunBatang/BareunBatangOTFL.woff') format('woff');
+}
+
+.bareunbatang * {
+font-family: 'BareunBatang', serif;
+}
+}
