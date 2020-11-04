@@ -16,15 +16,20 @@ font-size:16px; font-weight:bold; padding:10px 40px}
 
 
 
+
+
+
 /*bar*/
 .navbar{position: absolute; height:5px; bottom:-1px; z-index: 200; background:#fff; transition: all .3s ease-in-out;}
 
 
 
 
+
 /*dp2*/
 header .header_in nav .navlist > li > .dp2{height:0; visibility: hidden;}
-header .header_in nav .navlist > li > .dp2 > li{height:40px}
+header .header_in nav .navlist > li > .dp2 > li{height:40px; }
+
 header .header_in nav .navlist > li > .dp2 > li > a{display:block; color:#666;
 padding:15px 5px; line-height:11px; font-size:14px;}
 
@@ -81,6 +86,7 @@ background:url('../images/visual_bg_in.jpg'); display:flex; justify-content: cen
 
 .visual .visual_in .object_03 img.on {opacity:1}
 
+
 /*brand*/
 .brand {height:695px; background:#f2f2f2; display: flex}
 
@@ -103,6 +109,7 @@ border-top:1px solid #1b1b1b; }
 .brand .brand_text .award > ul > li{float:left; font-size:13px; line-height:25px; margin:20px 25px 0 0;
 font-weight:bold}
 .brand .brand_text .text_box{margin:20px 20px 0 85px; width:500px;}
+
 .brand .brand_text .text_box > p{font-size:12px; color:#666666; line-height:20px}
 
 
@@ -133,7 +140,7 @@ font-size:13px; letter-spacing:0px; }
 
 .competi .competi_img{flex:none; height:100%;  width:998px; overflow: hidden}
 .competi .competi_img span {display:block; background:url('../images/competi_bg(4).jpg') no-repeat center; background-size:cover; height:100%;
-transition:all .2s linear
+transition:all .2s linear 
 }
 .competi .competi_img span:hover {transform:scale(1.2)}
 
@@ -145,22 +152,27 @@ transition:all .2s linear
 
 
 /*material*/
-.material{position: relative;  height:680px; background:url(../images/material_bg.jpg)no-repeat center; background-size:cover;}
+.material{position: relative;  height:590px; background:url(../images/material_bg.jpg)no-repeat center; background-size:cover;}
 /*img*/
-.material .mat_imglist{ padding-top:87px; overflow:hidden; text-align: center; font-size:0}
+.material .mat_imglist{ padding-top:100px; overflow:hidden; text-align: center; font-size:0}
 
 .material .mat_imglist .mat_img{position:relative; display:inline-block}
 .material .mat_imglist .mat_img + .mat_img {margin-left:25px}
 .material .mat_imglist .mat_img:last-child{margin-right:0}
 .material .mat_imglist .mat_img > img{vertical-align: top}
 /*text_box*/
-.material .mat_imglist .mat_img > .box {float:left; position:relative;
-width:390px; height:150px;background:#fff;}
-.material .mat_imglist .mat_img > .box > .hd3 { padding-top:35px;
-z-index:200; text-align:center; display:flex; font-size:1rem;
-justify-content: center;}
-.material .mat_imglist .mat_img > .box > .stxt {padding-top:10px; letter-spacing:-1.5px;
-color:#1b1b1b; text-align:center; line-height: 1.5; font-size:16px}
+.material .mat_imglist .mat_img:hover > .box{
+position: absolute; top:0; left:0;
+z-index: 100; width:390px; height:390px; 
+background:rgba(204,204,204,0.8);  text-align:center;}
+.mat_img:hover > .box > .txt_box{
+position: absolute; top:50%; left:50%;
+transform:translate(-50%,-50%); width:300px; color:#1b1b1b;}
+.mat_img:hover > .box > .txt_box > .hd3 {
+z-index:200;  font-size:2rem;
+}
+.mat_img:hover > .box > .txt_box > .stxt {padding-top:10px; letter-spacing:-1.5px;
+ text-align:center; line-height: 1.5; font-size:16px; font-weight:bold}
 
 
 
@@ -173,8 +185,11 @@ color:#1b1b1b; text-align:center; line-height: 1.5; font-size:16px}
 .linklist .grid:nth-child(1) {flex:none; width:364px;  height:364px; background:#f00}
 .linklist .grid:nth-child(2) {flex:none; width:364px; height:364px; background:#f00}
 .linklist .grid:nth-child(3) {flex:1;  width:508px;  height:364px;}
-
-.linklist .grid .simg{}
+/*
+.linklist .grid .simg{transition:all .2s linear; width:364px; height:364px;
+display:block;}
+.linklist .grid .simg:hover{transform:scale(1.2)}
+*/
 .linklist .grid .stext{z-index:200; position: absolute; top:200px; margin-left:20px}
 .linklist .grid .stext > h4{color:#fff; font-size:25px; padding-bottom:10px;
 display:inline-block
@@ -205,22 +220,13 @@ content:""; display:block; width:100%; height:2px; background:#fff; margin-top:1
 
 /*review*/
 .linklist .grid.r_box .row.review .re_inner{margin:0 auto; margin-top:15px;
-width:462px; height:185px;}
+width:462px; height:189px; }
 .linklist .grid.r_box .row.review .re_inner h5{font-size:25px; text-decoration:underline;}
-.linklist .grid.r_box .row.review .re_inner > ul{width:462px; height:144px;  margin-top:11px; overflow:hidden;}
-.linklist .grid.r_box .row.review .re_inner > ul > li{float:left;
-width:220px; height:144px; background: #e0dcdc}
-.linklist .grid.r_box .row.review .re_inner > ul > li:first-child{margin-right:22px;}
-.linklist .grid.r_box .row.review .re_inner > ul > li > a{overflow:hidden;}
+.linklist .grid.r_box .row.review .re_inner .slidebox{width:429px; height:144px; overflow: hidden; margin:15px;}
+.linklist .grid.r_box .row.review .re_inner .slidebox .slidelist{position:relative; width:429px; height:144px; }
+.row.review .re_inner .slidebox .slidelist .slideimg{position: relative;}
+.row.review .re_inner .slidebox .slidelist .slideimg a img{display:block}
 
-.row.review .re_inner > ul > li .dp2 {display:flex; height:100%;}
-.row.review .re_inner > ul > li .dp2 > dt,
-.row.review .re_inner > ul > li .dp2 > dd{flex:1;}
-.row.review .re_inner > ul > li .dp2 > dt{}
-.row.review .re_inner > ul > li .dp2 > dd{padding:10px 5px;}
-.row.review .re_inner > ul > li .dp2 > dd .stext{position:relative; top:0; left:0;
-font-size:13px; color:#1b1b1b; display:block; font-weight:bold}
-.row.review .re_inner > ul > li .dp2 > dd .stext.ty1{font-size:11px; line-height:1.5; margin-top: 20px; font-weight:lighter}
 
 /*news*/
 .linklist .grid.r_box .row.news {height:126px; margin-top:20px; background: #cec7c0}

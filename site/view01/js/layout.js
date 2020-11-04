@@ -101,19 +101,25 @@ var navfstDp2LiHt = $(".navlist > li").find(".dp2 > li:first").outerHeight();
 		
 		
 	});
-
 	
 	
 	
 	
-	
-		var swiper = new Swiper('.swiper-container', {
+	//viusal
+	var swiper = new Swiper('.swiper-container', {
 					loop:true,
 					autoplay: {
 						delay: 4000,
 					},							
 				});
-
+			/*
+				var swiper2 = new Swiper('.swiper-container2', {
+					loop:true,
+					autoplay: {
+						delay: 4000,
+					},							
+				});
+			*/
 				swiper.on('slideChange', function () {
 				  console.log(swiper.realIndex);
 					$('.visual .visual_in .object_01 img').removeClass("on");
@@ -131,6 +137,37 @@ var navfstDp2LiHt = $(".navlist > li").find(".dp2 > li:first").outerHeight();
 	
 	
 	
+
+		var currentIndex = 0;
+		setInterval(function(){
+			if(currentIndex < 2){
+				currentIndex++;
+			}else{
+				currentIndex = 0;
+			}
+			
+	var slidePosition = currentIndex * (-144)+"px";
+		
+			$(".slideimg").animate({top:slidePosition},400); 
+			
+	},3000);
 	
 	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 });
