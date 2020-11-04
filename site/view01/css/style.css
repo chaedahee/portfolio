@@ -238,6 +238,7 @@ width:462px; height:189px; }
 .linklist .grid.r_box .row.news > ul >li{}
 .linklist .grid.r_box .row.news > ul >li > a{display:block; color:#666; font-size:14px; font-weight:lighter; line-height:25px;}
 
+.linklist .grid.r_box .row.news > ul >li:hover > a{text-decoration:underline}
 
 
 footer{ height:250px; background:#222222}
