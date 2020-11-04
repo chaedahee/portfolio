@@ -11,7 +11,9 @@ header{
 	display: flex;
 	height:86px; background:#6a9c3f; 
 }
-header .h_logo{margin:auto 4vw; }
+header .h_logo{
+	margin:auto 4vw;
+	margin-top:6px}
 header .h_logo > a{}
 header .h_logo > a > img{}
 
