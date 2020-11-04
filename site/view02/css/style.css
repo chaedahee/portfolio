@@ -308,7 +308,7 @@ header .nav_btn.active > span:nth-child(3){
 
 /*deep rooted*/
 .deep{
-	}
+	margin-top:200px;}
 .deep > h3{
 	text-align: center; font-size:30px; color:#1b1b1b;}
 .deep > h3 .bar{
