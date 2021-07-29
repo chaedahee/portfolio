@@ -141,7 +141,7 @@ width:40px; height:18px; background:#fae8dd;}
 .renew_01 > .re_box > .re_left .re_ex > .re_btn{overflow:hidden; margin-top:60px;}
 .renew_01 > .re_box > .re_left .re_ex > .re_btn > li{float:left; margin-left:40px;}
 .renew_01 > .re_box > .re_left .re_ex > .re_btn > li > a{display:block;
-border: 2px solid #230403; padding:10px 15px; color:#230403}
+border: 2px solid #230403; padding:10px 15px; color:#230403; font-weight:bold; background:#b3a4a0;}
 /*
 .renew_01 > .re_box > .re_left .re_ex > .re_btn > li.on > a,
 .renew_01 > .re_box > .re_left .re_ex > .re_btn > li> a:hover{color:#fff; background:#8199d6}
@@ -182,7 +182,7 @@ width:40px; height:18px; background:#6a9c3f;}
 .renew_02 > .re_box > .re_left .re_ex > .re_btn{overflow:hidden; margin-top:50px;}
 .renew_02 > .re_box > .re_left .re_ex > .re_btn > li{float:left; margin-left:40px;}
 .renew_02 > .re_box > .re_left .re_ex > .re_btn > li > a{display:block;
-border: 2px solid #6a9c3f; padding:10px 15px; color:#6a9c3f;}
+border: 2px solid #6a9c3f; padding:10px 15px; color:#6a9c3f; font-weight:bold; background:#d2e1c5;}
 
 .renew_02 >.re_box > .re_left .re_ex > .re_btn > li.on > a{color:#fff; background:#6a9c3f}
 
